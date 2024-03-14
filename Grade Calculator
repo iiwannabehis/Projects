@@ -1,0 +1,33 @@
+# creates an empty list to store grades
+grades = []
+
+# Prompt the user to enter grades for each module, can be changed for assignments and tests etc
+module1 = float(input("Enter the grade for Module 1: "))
+module2 = float(input("Enter the grade for Module 2: "))
+module3 = float(input("Enter the grade for Module 3: "))
+module4 = float(input("Enter the grade for Module 4: "))
+module5 = float(input("Enter the grade for Module 5: "))
+module6 = float(input("Enter the grade for Module 6: "))
+print()
+# Append each module grade to the list of grades
+grades.append(module1)
+grades.append(module2)
+grades.append(module3)
+grades.append(module4)
+grades.append(module5)
+grades.append(module6)
+
+print("------------Results----------")
+# Show the lowest grade
+lowest_grade = min(grades)
+print(f"Lowest Grade: {lowest_grade:.2f}")
+# Show the highest grade
+highest_grade = max(grades)
+print(f"Highest Grade: {highest_grade:.2f}")
+# Calculate and show the sum of the grades as a output
+sum_grades = sum(grades)
+print(f"Sum of Grades: {sum_grades:.2f}")
+# Calculate and show the average grade as a output
+average_grade = sum_grades / len(grades)
+print(f"Average: {average_grade:.2f}")
+print("------------------------------------")
